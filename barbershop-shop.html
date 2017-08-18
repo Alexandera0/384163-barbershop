@@ -3,12 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Барбершоп</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="main-header">
   <nav class="main-navigation">
-    <a class="main-header-logo" href="index.html"> <img src="logo.svg" width="200" height="53"
-                                                        alt="Логотип барбешопа Бородинский"></a>
+    <a class="main-header-logo" href="index.html"><img src="img/logo-small.svg" alt="Логотип барбешопа Бородинский"></a>
+      <img src="logo.svg" width="200" height="53"
+           alt="Логотип магазина мороженного Глэйси"></a>
     <ul class="site-navigation">
       <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
       <li><a href="news.html">НОВОСТИ</a></li>
@@ -79,42 +81,37 @@
     <h2 class="invisible">ФОТОГРАФИИ</h2>
     <ul class="catalog">
       <li class="item">
-        <a href="item.html"><img src="baxter_of_california.jpeg" width="150" height="150"
-                                 alt="baxter of california НАБОР ДЛЯ ПУТЕШЕСТВИЙ"></a>
+        <a href="item.html"><img src="img/product-shop-1.jpg" width="220" height="165" alt="baxter of california НАБОР ДЛЯ ПУТЕШЕСТВИЙ"></a>
         <a href="item.html">НАБОР ДЛЯ ПУТЕШЕСТВИЙ «BAXTER OF CALIFORNIA»</a>
         <p><span class="price">2 900 P</span>
           <a class="button" href="buy.html">КУПИТЬ</a></p>
       </li>
       <li class="item">
-        <a href="item.html"><img src="baxter_of_california_1.jpeg" width="150" height="150"
-                                 alt="baxter of california УВЛАЖНЯЮЩИЙ КОНДИЦИОНЕР"></a>
+        <a href="item.html"><img src="img/product-shop-2.jpg" width="220" height="165" alt="baxter of california УВЛАЖНЯЮЩИЙ КОНДИЦИОНЕР"></a>
         <a href="item.html">УВЛАЖНЯЮЩИЙ КОНДИЦИОНЕР «BAXTER OF CALIFORNIA»</a>
         <p><span class="price">750 P</span>
           <a class="button" href="buy.html">КУПИТЬ</a></p>
       </li>
       <li class="item">
-        <a href="item.html"><img src="suavecito.jpeg" width="150" height="150" alt="ГЕЛЬ ДЛЯ ВОЛОС «SUAVECITO»"></a>
+        <a href="item.html"><img src="img/product-shop-3.jpg" height="165" width="220" alt="ГЕЛЬ ДЛЯ ВОЛОС «SUAVECITO»"></a>
         <a href="item.html">ГЕЛЬ ДЛЯ ВОЛОС «SUAVECITO»</a>
         <p><span class="price">290 P</span>
           <a class="button" href="buy.html">КУПИТЬ</a></p>
       </li>
       <li class="item">
-        <a href="item.html"><img src="american_crew.jpeg" width="150" height="150"
-                                 alt="ГЕЛЬ ДЛЯ УКЛАДКИ ВОЛОС «AMERICAN CREW»"></a>
+        <a href="item.html"><img src="img/product-shop-4.jpg" width="220" height="165" alt="ГЕЛЬ ДЛЯ УКЛАДКИ ВОЛОС «AMERICAN CREW»"></a>
         <a href="item.html">ГЕЛЬ ДЛЯ УКЛАДКИ ВОЛОС «AMERICAN CREW»</a>
         <p><span class="price">500 P</span>
           <a class="button" href="buy.html">КУПИТЬ</a></p>
       </li>
       <li class="item">
-        <a href="item.html"><img src="american_crew_1.jpeg" width="150" height="150"
-                                 alt="ГЕЛЬ ДЛЯ ВОЛОС «AMERICAN CREW»"></a>
+        <a href="item.html"><img src="img/product-shop-5.jpg" height="165" width="220" alt="ГЕЛЬ ДЛЯ ВОЛОС «AMERICAN CREW»"></a>
         <a href="item.html">ГЕЛЬ ДЛЯ ВОЛОС «AMERICAN CREW»</a>
         <p><span class="price">300 P</span>
           <a class="button" href="buy.html">КУПИТЬ</a></p>
       </li>
       <li class="item">
-        <a href="item.html"><img src="baxter_of_california_2.jpeg" width="150" height="150"
-                                 alt="НАБОР ДЛЯ БРИТЬЯ «BAXTER OF CALIFORNIA»"></a>
+        <a href="item.html"><img src="img/product-shop-6.jpg" width="220" height="165" alt="НАБОР ДЛЯ БРИТЬЯ «BAXTER OF CALIFORNIA»"></a>
         <a href="item.html">НАБОР ДЛЯ БРИТЬЯ «BAXTER OF CALIFORNIA»</a>
         <p><span class="price">3 900 P</span>
           <a class="button" href="buy.html">КУПИТЬ</a></p>
@@ -140,9 +137,9 @@
   <div class="footer-social">
     <b>ДАВАЙТЕ ДРУЖИТЬ!</b>
     <ul>
-      <li><a class="social-button" href="#">Вконтакте</a></li>
-      <li><a class="social-button" href="#">Фейсбук</a></li>
-      <li><a class="social-button" href="#">Инстаграм</a></li>
+      <li><a class="social-button" href="#"><img src="img/vk.svg" alt="вконтакте"></a></li>
+      <li><a class="social-button" href="#"><img src="img/facebook.svg" alt="фейсбук"></a></li>
+      <li><a class="social-button" href="#"><img src="img/instagram.svg" alt="инстаграм"></a></li>
     </ul>
   </div>
   <p class="footer-copyright">
@@ -156,9 +153,11 @@
   <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
     <p>
       <input class="login-icon-user" type="text" name="login" placeholder="Логин">
+      <img src="img/user.svg" alt="user">
     </p>
     <p>
       <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+      <img src="img/lock.svg" alt="пароль">
     </p>
     <p class="login-password-info">
       <input type="checkbox" name="remember" class="visually-hidden">

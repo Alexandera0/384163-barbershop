@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Барбершоп</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="main-header">
   <nav class="main-navigation">
-    <a class="main-header-logo" href="index.html"><img src="logo.svg" width="200" height="53"
-                                                       alt="Логотип барбешопа Бородинский"></a>
+    <a class="main-header-logo" href="index.html"><img src="img/logo-small.svg" alt="Логотип барбешопа Бородинский"></a>
     <ul class="site-navigation">
       <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
       <li><a href="news.html">НОВОСТИ</a></li>
@@ -17,7 +17,7 @@
       <li><a href="contacts.html">КОНТАКТЫ</a></li>
     </ul>
     <ul class="user-navigation">
-      <li class="login-link">Вход</li>
+      <li class="login-link"><img src="img/login.svg" alt="Вход">Вход</li>
     </ul>
   </nav>
 </header>
@@ -32,10 +32,10 @@
 
   <section class="photos">
     <h2 class="invisible">ФОТОГРАФИИ</h2>
-    <img src="baxter_of_california_1.jpeg" height="370" width="350" alt="НАБОР ДЛЯ ПУТЕЩЕСТВИЙ BAXTER OF CALIFORNIA 1">
-    <img src="baxter_of_california_2.jpeg" height="140" width="140" alt="НАБОР ДЛЯ ПУТЕЩЕСТВИЙ BAXTER OF CALIFORNIA 2">
-    <img src="baxter_of_california_3.jpeg" height="140" width="140" alt="НАБОР ДЛЯ ПУТЕЩЕСТВИЙ BAXTER OF CALIFORNIA 3">
-    <img src="baxter_of_california_4.jpeg" height="140" width="140" alt="НАБОР ДЛЯ ПУТЕЩЕСТВИЙ BAXTER OF CALIFORNIA 4">
+    <img src="img/products-item-1.jpg" height="498" width="460" alt="НАБОР ДЛЯ ПУТЕЩЕСТВИЙ BAXTER OF CALIFORNIA 1">
+    <img src="img/products-item-2.jpg" width="140" height="149" alt="НАБОР ДЛЯ ПУТЕЩЕСТВИЙ BAXTER OF CALIFORNIA 2">
+    <img src="img/products-item-3.jpg" height="149" width="140" alt="НАБОР ДЛЯ ПУТЕЩЕСТВИЙ BAXTER OF CALIFORNIA 3">
+    <img src="img/products-item-4.jpg" height="149" width="140" alt="НАБОР ДЛЯ ПУТЕЩЕСТВИЙ BAXTER OF CALIFORNIA 4">
   </section>
 
   <section class="discription">
@@ -67,9 +67,9 @@
   <div class="footer-social">
     <b>ДАВАЙТЕ ДРУЖИТЬ!</b>
     <ul>
-      <li><a class="social-button" href="#">Вконтакте</a></li>
-      <li><a class="social-button" href="#">Фейсбук</a></li>
-      <li><a class="social-button" href="#">Инстаграм</a></li>
+      <li><a class="social-button" href="#"><img src="img/vk.svg" alt="вконтакте"></a></li>
+      <li><a class="social-button" href="#"><img src="img/facebook.svg" alt="фейсбук"></a></li>
+      <li><a class="social-button" href="#"><img src="img/instagram.svg" alt="инстаграм"></a></li>
     </ul>
   </div>
   <p class="footer-copyright">
@@ -83,9 +83,11 @@
   <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
     <p>
       <input class="login-icon-user" type="text" name="login" placeholder="Логин">
+      <img src="img/user.svg" alt="user">
     </p>
     <p>
       <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+      <img src="img/lock.svg" alt="пароль">
     </p>
     <p class="login-password-info">
       <input type="checkbox" name="remember" class="visually-hidden">
