@@ -8,9 +8,7 @@
 <body>
 <header class="main-header">
   <nav class="main-navigation">
-    <a class="main-header-logo" href="index.html"><img src="img/logo-small.svg" alt="Логотип барбешопа Бородинский"></a>
-      <img src="logo.svg" width="200" height="53"
-           alt="Логотип магазина мороженного Глэйси"></a>
+    <a class="main-header-logo" href="index.html"><img src="img/logo-small.svg" alt="Логотип барбешопа Бородинский"width="150" height="50"></a>
     <ul class="site-navigation">
       <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
       <li><a href="news.html">НОВОСТИ</a></li>
@@ -19,7 +17,9 @@
       <li><a href="contacts.html">КОНТАКТЫ</a></li>
     </ul>
     <ul class="user-navigation">
-      <li class="login-link">Вход</li>
+      <li class="login-link">
+        <button class="button" type="submit"><img src="img/login.svg" alt="Вход">Вход</button>
+      </li>
     </ul>
   </nav>
 </header>
@@ -27,34 +27,52 @@
 <main>
   <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
   <ul class="goods-navigation">
-    <li><a href="main.html">ГЛАВНАЯ</a></li>
+    <li><a href="index.html">ГЛАВНАЯ</a></li>
     <li><a href="shop.html">МАГАЗИН</a></li>
     <li><a class="current-breadcrumbs">СРЕДСТВА ДЛЯ УХОДА</a></li>
   </ul>
 
   <section class="filters">
-    <h2 class="invisible">ФИЛЬТРЫ</h2>
+    <h2 class="visually-hidden">ФИЛЬТРЫ</h2>
     <form action="https://echo.htmlacademy.ru" method="get" class="filter">
       <fieldset>
         <legend>ПРОИЗВОДИТЕЛИ:</legend>
         <ul>
-          <li><input type="checkbox" name="BAXTER OF CALIFORNIA" checked>
-            BAXTER OF CALIFORNIA
+          <li>
+            <label for="baxter-of-california-id">
+              <input id="baxter-of-california-id" type="checkbox" name="BAXTER OF CALIFORNIA" checked>
+              BAXTER OF CALIFORNIA
+            </label>
           </li>
-          <li><input type="checkbox" name="MR NATTY">
-            MR NATTY
+          <li>
+            <label for="mr-natty-id">
+              <input id="mr-natty-id" type="checkbox" name="MR NATTY">
+              MR NATTY
+            </label>
           </li>
-          <li><input type="checkbox" name="SUAVECITO" checked>
-            SUAVECITO
+          <li>
+            <label for="suavecito-id">
+              <input id="suavecito-id" type="checkbox" name="SUAVECITO" checked>
+              SUAVECITO
+            </label>
           </li>
-          <li><input type="checkbox" name="MALIN+GOETZ">
-            MALIN+GOETZ
+          <li>
+            <label for="malin+goetz-id">
+              <input id="malin+goetz-id" type="checkbox" name="MALIN+GOETZ">
+              MALIN+GOETZ
+            </label>
           </li>
-          <li><input type="checkbox" name="MURRAY'S">
-            MURRAY'S
+          <li>
+            <label for="murray's-id">
+              <input id="murray's-id" type="checkbox" name="MURRAY'S">
+              MURRAY'S
+            </label>
           </li>
-          <li><input type="checkbox" name="AMERICAN CREW" checked>
-            AMERICAN CREW
+          <li>
+            <label for="american-crew-id">
+              <input id="american-crew-id" type="checkbox" name="AMERICAN CREW" checked>
+              AMERICAN CREW
+            </label>
           </li>
         </ul>
       </fieldset>
@@ -62,14 +80,23 @@
       <fieldset>
         <legend>ГРУППЫ ТОВАРОВ:</legend>
         <ul>
-          <li><input type="radio" value="p" name="group_1">
-            БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ
+          <li>
+            <label for="brow-accessories-id">
+              <input id="brow-accessories-id" type="radio" value="BROWN ACCESSORIES" name="group_1">
+              БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ
+            </label>
           </li>
-          <li><input type="radio" value="p" name="group_1" checked>
-            СРЕДСТВА ДЛЯ УХОДА
+          <li>
+            <label for="means-of-care-id">
+              <input id="means-of-care-id" type="radio" value="MEANS FOR CARE" name="group_1" checked>
+              СРЕДСТВА ДЛЯ УХОДА
+            </label>
           </li>
-          <li><input type="radio" value="p" name="group_1">
-            АКСЕССУАРЫ
+          <li>
+            <label for="accessories-id">
+              <input id="accessories-id" type="radio" value="ACCESSORIES" name="group_1">
+              АКСЕССУАРЫ
+            </label>
           </li>
         </ul>
         <button type="submit">ПОКАЗАТЬ</button>
@@ -78,41 +105,40 @@
   </section>
 
   <section class="photos">
-    <h2 class="invisible">ФОТОГРАФИИ</h2>
+    <h2 class="visually-hidden">ФОТОГРАФИИ</h2>
     <ul class="catalog">
       <li class="item">
-        <a href="item.html"><img src="img/product-shop-1.jpg" width="220" height="165" alt="baxter of california НАБОР ДЛЯ ПУТЕШЕСТВИЙ"></a>
-        <a href="item.html">НАБОР ДЛЯ ПУТЕШЕСТВИЙ «BAXTER OF CALIFORNIA»</a>
+        <a href="item.html"><img src="img/product-shop-1.jpg" width="220" height="165"
+                                 alt="baxter of california НАБОР ДЛЯ ПУТЕШЕСТВИЙ">НАБОР ДЛЯ ПУТЕШЕСТВИЙ «BAXTER OF CALIFORNIA»</a>
         <p><span class="price">2 900 P</span>
           <a class="button" href="buy.html">КУПИТЬ</a></p>
       </li>
       <li class="item">
-        <a href="item.html"><img src="img/product-shop-2.jpg" width="220" height="165" alt="baxter of california УВЛАЖНЯЮЩИЙ КОНДИЦИОНЕР"></a>
-        <a href="item.html">УВЛАЖНЯЮЩИЙ КОНДИЦИОНЕР «BAXTER OF CALIFORNIA»</a>
+        <a href="item.html"><img src="img/product-shop-2.jpg" width="220" height="165"
+                                 alt="baxter of california УВЛАЖНЯЮЩИЙ КОНДИЦИОНЕР">УВЛАЖНЯЮЩИЙ КОНДИЦИОНЕР «BAXTER OF CALIFORNIA»</a>
         <p><span class="price">750 P</span>
           <a class="button" href="buy.html">КУПИТЬ</a></p>
       </li>
       <li class="item">
-        <a href="item.html"><img src="img/product-shop-3.jpg" height="165" width="220" alt="ГЕЛЬ ДЛЯ ВОЛОС «SUAVECITO»"></a>
-        <a href="item.html">ГЕЛЬ ДЛЯ ВОЛОС «SUAVECITO»</a>
+        <a href="item.html"><img src="img/product-shop-3.jpg" height="165" width="220" alt="ГЕЛЬ ДЛЯ ВОЛОС «SUAVECITO»">ГЕЛЬ ДЛЯ ВОЛОС «SUAVECITO»</a>
         <p><span class="price">290 P</span>
           <a class="button" href="buy.html">КУПИТЬ</a></p>
       </li>
       <li class="item">
-        <a href="item.html"><img src="img/product-shop-4.jpg" width="220" height="165" alt="ГЕЛЬ ДЛЯ УКЛАДКИ ВОЛОС «AMERICAN CREW»"></a>
-        <a href="item.html">ГЕЛЬ ДЛЯ УКЛАДКИ ВОЛОС «AMERICAN CREW»</a>
+        <a href="item.html"><img src="img/product-shop-4.jpg" width="220" height="165"
+                                 alt="ГЕЛЬ ДЛЯ УКЛАДКИ ВОЛОС «AMERICAN CREW»">ГЕЛЬ ДЛЯ УКЛАДКИ ВОЛОС «AMERICAN CREW»</a>
         <p><span class="price">500 P</span>
           <a class="button" href="buy.html">КУПИТЬ</a></p>
       </li>
       <li class="item">
-        <a href="item.html"><img src="img/product-shop-5.jpg" height="165" width="220" alt="ГЕЛЬ ДЛЯ ВОЛОС «AMERICAN CREW»"></a>
-        <a href="item.html">ГЕЛЬ ДЛЯ ВОЛОС «AMERICAN CREW»</a>
+        <a href="item.html"><img src="img/product-shop-5.jpg" height="165" width="220"
+                                 alt="ГЕЛЬ ДЛЯ ВОЛОС «AMERICAN CREW»">ГЕЛЬ ДЛЯ ВОЛОС «AMERICAN CREW»</a>
         <p><span class="price">300 P</span>
           <a class="button" href="buy.html">КУПИТЬ</a></p>
       </li>
       <li class="item">
-        <a href="item.html"><img src="img/product-shop-6.jpg" width="220" height="165" alt="НАБОР ДЛЯ БРИТЬЯ «BAXTER OF CALIFORNIA»"></a>
-        <a href="item.html">НАБОР ДЛЯ БРИТЬЯ «BAXTER OF CALIFORNIA»</a>
+        <a href="item.html"><img src="img/product-shop-6.jpg" width="220" height="165"
+                                 alt="НАБОР ДЛЯ БРИТЬЯ «BAXTER OF CALIFORNIA»">НАБОР ДЛЯ БРИТЬЯ «BAXTER OF CALIFORNIA»</a>
         <p><span class="price">3 900 P</span>
           <a class="button" href="buy.html">КУПИТЬ</a></p>
       </li>
@@ -137,9 +163,9 @@
   <div class="footer-social">
     <b>ДАВАЙТЕ ДРУЖИТЬ!</b>
     <ul>
-      <li><a class="social-button" href="#"><img src="img/vk.svg" alt="вконтакте"></a></li>
-      <li><a class="social-button" href="#"><img src="img/facebook.svg" alt="фейсбук"></a></li>
-      <li><a class="social-button" href="#"><img src="img/instagram.svg" alt="инстаграм"></a></li>
+      <li><a class="social-button" href="#"><img src="img/vk.svg" alt="вконтакте" width="50" height="50"></a></li>
+      <li><a class="social-button" href="#"><img src="img/facebook.svg" alt="фейсбук" width="50" height="50"></a></li>
+      <li><a class="social-button" href="#"><img src="img/instagram.svg" alt="инстаграм" width="50" height="50"></a></li>
     </ul>
   </div>
   <p class="footer-copyright">
@@ -149,19 +175,24 @@
 
 <section class="modal modal-login">
   <h2>Личный кабинет</h2>
-  <p>Введите свой логин и пароль.</p>
   <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
     <p>
-      <input class="login-icon-user" type="text" name="login" placeholder="Логин">
-      <img src="img/user.svg" alt="user">
+      <label for="login-id">Введите свой логин и пароль.
+        <input id="login-id" class="login-icon-user" type="text" name="login" placeholder="Логин">
+        <img src="img/user.svg" alt="user">
+      </label>
     </p>
     <p>
-      <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
-      <img src="img/lock.svg" alt="пароль">
+      <label for="password-id">
+        <input id="password-id" class="login-icon-password" type="password" name="password" placeholder="Пароль">
+        <img src="img/lock.svg" alt="пароль">
+      </label>
     </p>
     <p class="login-password-info">
-      <input type="checkbox" name="remember" class="visually-hidden">
-      Запомните меня
+      <label for="remember-id">
+        <input id="remember-id" type="checkbox" name="remember" class="visually-hidden">
+        Запомните меня
+      </label>
       <a class="restore" href="#">Я забыл пароль!</a>
     </p>
     <button class="button" type="submit">Войти</button>
