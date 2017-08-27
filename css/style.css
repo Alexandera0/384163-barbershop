@@ -1,9 +1,10 @@
 body {
-  font-family: "PT Sans Narrow";
+  font-family: "PT Sans Narrow", serif;
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
   color: #000000;
+  background-color: #000000;
 }
 
 h1 {
@@ -15,3 +16,91 @@ h2 {
   font-size: 24px;
   line-height: 30px;
 }
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.site-navigation, .user-navigation, footer ul, .shop-page ul {
+  list-style: none;
+}
+
+.site-navigation a, .user-navigation a, footer a, footer, .button {
+  color: #ffffff;
+}
+
+.site-navigation a:hover, .site-navigation a:active, .user-navigation a:hover, .user-navigation a:active {
+  background-color: #242424;
+}
+
+.button, button, .page a{
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.button:hover, .button:active, button:hover, button:active, .page a:hover, .page a:active {
+  background-color: #663d15;
+}
+
+.current_page a, .current_page a:hover, .current_page a:active{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.current-breadcrumbs {
+  color: #aba9a7;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset label:hover {
+  color: #663d15;
+}
+
+fieldset input:disabled + label, fieldset input:disabled:hover + label {
+  color: #adaba9;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer-contacts a, .modal-login a {
+  text-decoration: underline;
+}
+
+main {
+  background: #f7f4f1 url("../img/background-block-main.jpg") repeat;
+}
+
+header {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+footer {
+  font-size: 16px;
+  background-color: #222222;
+}
+
+.photos a {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+  text-align: left;
+}
+
+.price {
+  background-color: #e5e5e5;
+  text-align: center;
+}
+
+.modal {
+  color: #000000;
+  background: #f8f3f0 url("../img/background-block-main.jpg") repeat 0 0;
+}
+

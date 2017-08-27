@@ -3,9 +3,11 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Барбершоп</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
-<body>
+<body class="shop-page">
 <header class="main-header">
   <nav class="main-navigation">
     <a class="main-header-logo" href="index.html"><img src="img/logo-small.svg" alt="Логотип барбешопа Бородинский" width="150" height="50"></a>
@@ -36,41 +38,41 @@
     <h2 class="visually-hidden">ФИЛЬТРЫ</h2>
     <form action="https://echo.htmlacademy.ru" method="get" class="filter">
       <fieldset>
-        <legend>ПРОИЗВОДИТЕЛИ:</legend>
+        <legend><h2>ПРОИЗВОДИТЕЛИ:</h2></legend>
         <ul>
           <li>
-            <label for="baxter-of-california-id">
               <input id="baxter-of-california-id" type="checkbox" name="BAXTER OF CALIFORNIA" checked>
+            <label for="baxter-of-california-id">
               BAXTER OF CALIFORNIA
             </label>
           </li>
           <li>
+              <input id="mr-natty-id" type="checkbox" name="MR NATTY" disabled="disabled">
             <label for="mr-natty-id">
-              <input id="mr-natty-id" type="checkbox" name="MR NATTY">
               MR NATTY
             </label>
           </li>
           <li>
-            <label for="suavecito-id">
               <input id="suavecito-id" type="checkbox" name="SUAVECITO" checked>
+            <label for="suavecito-id">
               SUAVECITO
             </label>
           </li>
           <li>
-            <label for="malin+goetz-id">
               <input id="malin+goetz-id" type="checkbox" name="MALIN+GOETZ">
+            <label for="malin+goetz-id">
               MALIN+GOETZ
             </label>
           </li>
           <li>
-            <label for="murray's-id">
               <input id="murray's-id" type="checkbox" name="MURRAY'S">
+              <label for="murray's-id">
               MURRAY'S
             </label>
           </li>
           <li>
-            <label for="american-crew-id">
               <input id="american-crew-id" type="checkbox" name="AMERICAN CREW" checked>
+            <label for="american-crew-id">
               AMERICAN CREW
             </label>
           </li>
@@ -78,23 +80,23 @@
       </fieldset>
 
       <fieldset>
-        <legend>ГРУППЫ ТОВАРОВ:</legend>
+        <legend><h2>ГРУППЫ ТОВАРОВ:</h2></legend>
         <ul>
           <li>
-            <label for="brow-accessories-id">
               <input id="brow-accessories-id" type="radio" value="BROWN ACCESSORIES" name="group_1">
+            <label for="brow-accessories-id">
               БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ
             </label>
           </li>
           <li>
-            <label for="means-of-care-id">
               <input id="means-of-care-id" type="radio" value="MEANS FOR CARE" name="group_1" checked>
+            <label for="means-of-care-id">
               СРЕДСТВА ДЛЯ УХОДА
             </label>
           </li>
           <li>
-            <label for="accessories-id">
               <input id="accessories-id" type="radio" value="ACCESSORIES" name="group_1">
+            <label for="accessories-id">
               АКСЕССУАРЫ
             </label>
           </li>
